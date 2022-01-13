@@ -15,7 +15,7 @@ service:
   port: 80
 
 serviceAccount:
-  create: true
+  create: false
   annotations: {}
   name: ""
 
