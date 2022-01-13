@@ -1,0 +1,97 @@
+/*Reset*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+#root, #__next {
+    isolation: isolate;
+}
+
+/*Custom*/
+
+:root {
+    --gray-100: #eaeff2;
+    --gray-200: #c8d0d5;
+    --gray-300: #9ba7af;
+    --gray-400: #68707a;
+    --gray-500: #4d545d;
+    --gray-600: #3e464e;
+    --gray-700: #2d363e;
+    --gray-800: #242c34;
+    --gray-900: #1e252c;
+
+    --shadow-lg: 0 1rem 3rem rgb(0 0 0 / 18%);
+    --shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    --shadow-sm: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+
+    --blue-gradient: linear-gradient(
+            125deg,
+            hsl(202deg 76% 52%) 0%,
+            hsl(203deg 78% 50%) 11%,
+            hsl(205deg 81% 49%) 22%,
+            hsl(208deg 79% 50%) 33%,
+            hsl(212deg 77% 53%) 44%,
+            hsl(217deg 75% 55%) 56%,
+            hsl(224deg 71% 57%) 67%,
+            hsl(232deg 66% 59%) 78%,
+            hsl(242deg 60% 60%) 89%,
+            hsl(253deg 58% 56%) 100%
+    );
+}
+
+html {
+    background-image: var(--blue-gradient);
+    font-family: sans-serif;
+}
+
+main {
+    background: var(--gray-700);
+    color: white;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-top: 3rem;
+    border-radius: 3px;
+    padding: 1rem;
+    box-shadow: var(--shadow-lg);
+    border: var(--gray-900) 1px solid;
+    text-align: center;
+}
+
+
+a.btn {
+    color: white;
+    background: var(--blue-gradient);
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+    text-decoration: none;
+}
+
+a.btn:hover, a.btn:focus {
+    background: var(--gray-600);
+}
+
+a.btn:active {
+    background: var(--gray-800);
+}
