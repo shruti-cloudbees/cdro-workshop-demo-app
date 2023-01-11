@@ -1,5 +1,7 @@
 # CD/RO Workshop Demo App
 
+trigger from github
+
 This is the demo application for use in the CD/RO workshop.
 
 ## How to run
